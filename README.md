@@ -1,5 +1,3 @@
-# b7a10-chef-recipe-hunter-client-side-tonmoy-Org
-b7a10-chef-recipe-hunter-client-side-tonmoy-Org created by GitHub Classroom
 ## A Simple Intro About This Website Programming Hero Course Assignment No 10.
 * This is a React web page that displays Food Recipes of Differences Chef. 
 * Users can click a button to view more Recipes.
