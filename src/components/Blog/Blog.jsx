@@ -1,8 +1,10 @@
 import React from 'react';
 import App from '../../App';
 import PDFDocument from '../PDFDocument/PDFDocument';
+import useTitle from '../hooks/useTitle';
 
 const Blog = () => {
+    useTitle('Blog')
     return (
         <div>
             <div>

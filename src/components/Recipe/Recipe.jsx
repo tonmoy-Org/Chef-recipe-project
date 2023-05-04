@@ -3,10 +3,11 @@ import { Rating } from '@smastrom/react-rating'
 import '@smastrom/react-rating/style.css'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import useTitle from '../hooks/useTitle';
 
 const Recipe = ({ recipe }) => {
     const [disabled, setDisabled] = useState(false);
-    
+    useTitle('Recipe')
     const notify = () => {
         setDisabled(true);
         toast("Recipe Added In Favorite List");

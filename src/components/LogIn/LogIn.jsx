@@ -5,8 +5,10 @@ import { GithubAuthProvider, GoogleAuthProvider, getAuth, signInWithPopup } from
 import app from '../../firebase/firebase.config';
 import google from '../../assets/google.jpg';
 import github from '../../assets/github.jpg';
+import useTitle from '../hooks/useTitle';
 
 const LogIn = () => {
+    useTitle('Login')
     const auth = getAuth(app);
     const googleProvider = new GoogleAuthProvider();
     const githubProvider = new GithubAuthProvider();

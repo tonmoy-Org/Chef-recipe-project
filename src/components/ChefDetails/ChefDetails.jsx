@@ -2,8 +2,10 @@ import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import Recipe from '../Recipe/Recipe';
 import LazyLoad from 'react-lazy-load';
+import useTitle from '../hooks/useTitle';
 
 const ChefDetails = () => {
+    useTitle('Details')
     const data = useLoaderData();
     return (
         <div>

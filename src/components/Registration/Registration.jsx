@@ -2,8 +2,10 @@ import React, { useContext, useState} from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../providers/AuthProviders';
 import { updateProfile } from 'firebase/auth';
+import useTitle from '../hooks/useTitle';
 
 const Registration = () => {
+    useTitle('Registration')
     const { createUser } = useContext(AuthContext);
 
     const [error, setError] = useState('');

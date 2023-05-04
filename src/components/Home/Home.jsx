@@ -6,8 +6,9 @@ import tikka from '../../assets/image.jpg'
 import ChefCard from '../ChefCard/ChefCard';
 import Section from '../Section/Section';
 import Recipes from '../Recipes/Recipes';
+import useTitle from '../hooks/useTitle';
 const Home = () => {
-
+    useTitle('Home')
     const [data, setData] = useState([]);
 
     useEffect(() => {

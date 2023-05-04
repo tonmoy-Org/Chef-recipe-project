@@ -2,9 +2,11 @@ import React from 'react';
 import './ChefCard.css';
 import { Link, useNavigate } from 'react-router-dom';
 import LazyLoad from 'react-lazy-load';
+import useTitle from '../hooks/useTitle';
 
 
 const ChefCard = ({ info }) => {
+    useTitle('Chef Card')
     const { _id, name, experience, num_recipes, likes, img } = info;
     return (
         <div >

@@ -4,8 +4,10 @@ import map from '../../assets/map.svg';
 import call from '../../assets/call.svg';
 import './Contact.css';
 import { Link } from 'react-router-dom';
+import useTitle from '../hooks/useTitle';
 
 const Contact = () => {
+    useTitle('Contact')
     return (
         <div className='mb-32'>
             <div>
